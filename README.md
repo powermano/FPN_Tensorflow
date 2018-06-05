@@ -1,4 +1,4 @@
-# Feature Pyramid Networks for Object Detection        
+# Feature Pyramid Networks for Object Detection ()        
 
 # Some popular new re-implementation detectors (Faster-RCNN, FPN, R2CNN, RRPN, R-DFPN etc) will be upload in https://github.com/DetectionTeamUCAS soon and be evaluated in common data sets (VOC pascal, icdar). Stay tuned!     
         

@@ -184,7 +184,7 @@ def resnet_v1(inputs,
     with slim.arg_scope([slim.conv2d, bottleneck,
                          resnet_utils.stack_blocks_dense],
                         outputs_collections=end_points_collection):
-      with slim.arg_scope([slim.batch_norm], is_training=is_training):
+      with slim.arg_scope([slim.batch_norm], is_training=False, trainable=False):
         net = inputs
         if include_root_block:
           if output_stride is not None:

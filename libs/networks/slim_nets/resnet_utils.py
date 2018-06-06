@@ -220,10 +220,12 @@ def resnet_arg_scope(weight_decay=0.0001,
     An `arg_scope` to use for the resnet models.
   """
   batch_norm_params = {
+      'is_training': False,
       'decay': batch_norm_decay,
       'epsilon': batch_norm_epsilon,
       'scale': batch_norm_scale,
       'updates_collections': tf.GraphKeys.UPDATE_OPS,
+      'trainable': False
   }
 
   with slim.arg_scope(
